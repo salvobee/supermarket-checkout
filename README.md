@@ -22,4 +22,5 @@ $ composer test
 ``` 
 
 Have fun exploring how the test was passed using the [Strategy Pattern](https://it.wikipedia.org/wiki/Strategy_pattern), start from `tests/Feature/CheckoutTest.php` and traverse the source trough the classes and methods used on the test code.
-Since this was just a proof-of-concept, I didn't code any database interface object, but I've just used a plain array products and rules repository, where products are mapped to models and rules are considered as a "strategy" to calculate the price against the quantity in the cart.
+
+Since this was just a proof-of-concept, I didn't code any database interface object, but I've just used a _plain array_ sto store products and rules in a _repository_ class, where products are mapped to models and rules are considered as a _strategy classes_ to calculate the price against the quantity in the cart.
