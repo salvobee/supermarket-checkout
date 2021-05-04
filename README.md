@@ -20,3 +20,6 @@ Then run `phpunit` tests with the script provided in `composer.json`
 ```shell script
 $ composer test
 ``` 
+
+Have fun exploring how the test was passed using the [Strategy Pattern](https://it.wikipedia.org/wiki/Strategy_pattern), start from `tests/Feature/CheckoutTest.php` and traverse the source trough the classes and methods used on the test code.
+Since this was just a proof-of-concept, I didn't code any database interface object, but I've just used a plain array products and rules repository, where products are mapped to models and rules are considered as a "strategy" to calculate the price against the quantity in the cart.
